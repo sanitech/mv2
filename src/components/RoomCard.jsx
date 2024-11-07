@@ -35,16 +35,16 @@ const RoomCard = ({ room }) => {
           <svg
             version="1.1"
             id="Layer_1"
-            viewBox="0 0 512 512"
-            fill="#ff0000"
-            stroke="#ff0000"
             className="size-4"
+            viewBox="0 0 512 512"
+            fill="#ffffff"
+            stroke="#EF4444"
           >
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
             <g
               id="SVGRepo_tracerCarrier"
-              strokeLinecap="round"
-              strokeLinejoin="round"
+              stroke-linecap="round"
+              stroke-linejoin="round"
             ></g>
             <g id="SVGRepo_iconCarrier">
               {" "}
