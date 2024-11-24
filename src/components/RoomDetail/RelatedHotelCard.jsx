@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
-const RoomCard = ({ room }) => {
+const RelatedHotelCard = ({ room }) => {
   const [amenity, setAmenity] = useState(room.amenities || []);
   const navigation = useNavigate();
 
@@ -20,60 +20,17 @@ const RoomCard = ({ room }) => {
   //     });
   // };
   return (
-    <div className="max-w-sm rounded-lg bg-white">
+    <div className="w-fit shadow-sm rounded-lg flex h-28 overflow-hidden bg-white">
       {/* Discount Banner */}
       <div className="relative">
         <img
-          className="w-full h-48 object-cover cursor-pointer rounded-[15px]"
+          className="w-96 h-fit object-cover cursor-pointer"
           src="https://th.bing.com/th/id/R.b1ca75de8562f991b7432f431423a917?rik=3tdt8wkPlVgyvA&pid=ImgRaw&r=0"
           alt="Villa"
           onClick={() =>
             navigation(`${room.room_id}`, { state: { room: room } })
           }
         />
-        <div className="absolute flex items-center gap-1 top-2 left-[-3px] bg-red-500 shadow-xl text-white text-sm px-2 py-1 rounded-tr-full rounded-br-full rounded-tl-full">
-          <svg
-            version="1.1"
-            id="Layer_1"
-            viewBox="0 0 512 512"
-            fill="#ff0000"
-            stroke="#ff0000"
-            className="size-4"
-          >
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-            <g
-              id="SVGRepo_tracerCarrier"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            ></g>
-            <g id="SVGRepo_iconCarrier">
-              {" "}
-              <path
-                style={{ fill: "#ffffff" }}
-                d="M256,512c141.392,0,256-114.608,256-256S397.392,0,256,0S0,114.608,0,256S114.608,512,256,512z"
-              ></path>{" "}
-              <path d="M327.024,316.928c13.744,0,20.064-14.304,20.064-36.016c0-20.064-5.504-35.728-20.064-35.728 c-13.744,0-20.624,15.936-20.624,36C306.128,301.536,313.552,316.928,327.024,316.928z"></path>{" "}
-              <path d="M70.64,306.912l-35.68,75.824l88.128,10.112l5.104,86.656l82.304-38.992L264.368,512l48.064-72.208l75.744,36.832 l6.56-89.552l88.128-2.16l-32.768-74.384L512,257.088l-67.728-54.88l42.976-73.664l-91.04-7.216l-7.28-89.552l-77.2,36.832 L258.544,0l-49.52,70.048L129.632,28.16l-4.368,91.712l-90.304,4.336l34.224,86.656L0,253.472L70.64,306.912z M372.656,279.264 c0,37.376-21.712,56.64-46.464,56.64c-24.736,0-45.36-19.248-45.36-53.888c0-33.536,19.52-56.08,46.736-56.08 C355.888,225.92,372.656,247.088,372.656,279.264z M307.232,151.984h19.248L222.832,336.72h-19.248L307.232,151.984z M204.416,151.984c28.32,0,45.088,20.896,45.088,53.056c0,37.664-22,56.64-46.464,56.64c-25.008,0-45.36-19.248-45.632-53.616 C157.408,174.24,176.928,151.984,204.416,151.984z"></path>{" "}
-              <path d="M203.872,242.704c13.472,0,20.064-14.304,20.064-36.016c0-19.792-5.504-35.728-20.064-35.728 c-13.744,0-20.624,15.952-20.624,36.016C182.976,227.584,190.4,242.704,203.872,242.704z"></path>{" "}
-              <g>
-                {" "}
-                <polygon
-                  style={{ fill: "#ffffff" }}
-                  points="222.832,336.72 326.48,151.984 307.232,151.984 203.584,336.72 "
-                ></polygon>{" "}
-                <path
-                  style={{ fill: "#ffffff" }}
-                  d="M280.832,282.016c0,34.64,20.624,53.888,45.36,53.888c24.752,0,46.464-19.248,46.464-56.64 c0-32.16-16.784-53.328-45.088-53.328C300.352,225.92,280.832,248.464,280.832,282.016z M327.024,245.168 c14.56,0,20.064,15.664,20.064,35.728c0,21.712-6.32,36.016-20.064,36.016c-13.472,0-20.896-15.392-20.624-35.744 C306.4,261.104,313.28,245.168,327.024,245.168z"
-                ></path>{" "}
-                <path
-                  style={{ fill: "#ffffff" }}
-                  d="M203.04,261.664c24.464,0,46.464-18.976,46.464-56.64c0-32.16-16.784-53.056-45.088-53.056 c-27.488,0-47.008,22.272-47.008,56.08C157.68,242.416,178.016,261.664,203.04,261.664z M203.872,170.944 c14.56,0,20.064,15.952,20.064,35.728c0,21.712-6.592,36.016-20.064,36.016s-20.896-15.12-20.624-35.728 C183.248,186.896,190.112,170.944,203.872,170.944z"
-                ></path>{" "}
-              </g>{" "}
-            </g>
-          </svg>
-          75% Off
-        </div>
       </div>
 
       {/* Tags */}
@@ -97,13 +54,13 @@ const RoomCard = ({ room }) => {
             <h3 className="text-lg font-bold text-gray-900">
               {room.room_name}
             </h3>
-            <p className="text-sm text-gray-600 line-clamp-2">
+            {/* ` <p className="text-sm text-gray-600 line-clamp-2">
               {room.description}
-            </p>
+            </p>` */}
           </div>
 
           {/* Rating and Price */}
-          <div className="flex justify-between items-center mt-4">
+          <div className="flex justify-between items-center mt-1">
             <div className="flex items-center space-x-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -118,9 +75,9 @@ const RoomCard = ({ room }) => {
           </div>
         </div>
 
-        <div className="flex justify-between mt-3 items-center">
+        <div className="flex justify-between mt-1  gap-4 items-center">
           {/* Icons */}
-          <div className="flex items-center space-x-4 mt-4 text-gray-600 text-sm ring-gray-200 border rounded-full py-1 px-2 w-fit">
+          <div className="flex items-center space-x-4 mt-1 text-gray-600 text-sm ring-gray-500 border rounded-full py-1 px-2 w-fit">
             {/* Bed Icon */}
             <div className="flex items-center space-x-1">
               <svg
@@ -219,7 +176,7 @@ const RoomCard = ({ room }) => {
 
           <div className="text-right">
             {/* <p className="text-sm text-gray-500 line-through">$10,000</p> */}
-            <p className="text-lg font-bold text-gray-900">
+            <p className="text-base font-bold text-gray-900 ">
               {new Intl.NumberFormat("am-ET", {
                 style: "currency",
                 currency: "ETB",
@@ -235,4 +192,4 @@ const RoomCard = ({ room }) => {
   );
 };
 
-export default RoomCard;
+export default RelatedHotelCard;

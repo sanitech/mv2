@@ -65,7 +65,7 @@ const Home = () => {
           <RoomCard room={room} />
         ))}
       </div>
-      <div>sifen</div>
+      <div></div>
     </>
   );
 };
