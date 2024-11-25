@@ -4,6 +4,7 @@ import Home from "./page/Home";
 import Room from "./page/Room";
 import RoomDetail from "./page/RoomDetail";
 import NavBar from "./components/NavBar";
+import DashboardCards from "./components/DashBord";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/room" element={<Room />} />
         <Route path="/room/:roomId" element={<RoomDetail />} />
+        <Route path="/DashBord" element={<DashboardCards />} />
         <Route path="*" element={<h1>Not found</h1>} />
       </Routes>
     </>

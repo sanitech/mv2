@@ -25,7 +25,7 @@ const RelatedHotelCard = ({ room }) => {
       <div className="relative">
         <img
           className="w-96 h-fit object-cover cursor-pointer"
-          src="https://th.bing.com/th/id/R.b1ca75de8562f991b7432f431423a917?rik=3tdt8wkPlVgyvA&pid=ImgRaw&r=0"
+          src="https://via.placeholder.com/150"
           alt="Villa"
           onClick={() =>
             navigation(`${room.room_id}`, { state: { room: room } })

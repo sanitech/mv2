@@ -15,7 +15,7 @@ const AboutHotel = () => {
         </div>
       </div>
       <div className="font-medium text-2xl ">Description</div>
-      <p className="font-semibold line-clamp-6 text-lg leading-7 text-gray-700">
+      <p className="font-semibold line-clamp-6 text-lg leading-7 text-gray-700 ">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem
         illum accusantium facilis, non quaerat voluptatum sed, ratione placeat
         necessitatibus officiis, maxime maiores repellat quidem iusto quam

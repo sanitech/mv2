@@ -3,7 +3,7 @@ import React from "react";
 const NavBar = () => {
   return (
     <div>
-      {/* <link href="style.css" rel="stylesheet" /> */}
+      <link href="style.css" rel="stylesheet" />
       <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -21,7 +21,7 @@ const NavBar = () => {
         <>
           <div class="grid grid-cols-3 px-16 w-screen h-20 border-b-[12px] items-center fixed top-0 bg-white">
             <img
-              src="https://www.bing.com/th?id=OIP.RDStdOWibsHTs0f08IQdUAHaEo&w=151&h=100&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
+              src="https://th.bing.com/th/id/OIP.49gYuUbYD94P17yY2zuYdAHaHa?w=172&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
               alt=""
               class="h-16 w-28"
             />
@@ -51,7 +51,7 @@ const NavBar = () => {
           </div>
 
           <div class="flex items-center h-24 space-x-5 top-40 mt-20  bg-white">
-            <div class="flex items-center justify-center">
+            <div class="flex items-center justify-center space-x-1">
               <div class="flex flex-col items-center text-gray-400 hover:text-black gap-2 pl-16">
                 <img
                   src="https://a0.muscache.com/pictures/c0fa9598-4e37-40f3-b734-4bd0e2377add.jpg"
