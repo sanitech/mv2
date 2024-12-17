@@ -1,7 +1,7 @@
 import React from "react";
 import ActionButtons from "./DashboardButtons";
 import TopProductsTable from "./TopProductsTable";
-import BusinessTable from "./BusinessTable";
+// import BusinessTable from "./BusinessTable";
 
 const DashboardCards = () => {
   const cardsData = [

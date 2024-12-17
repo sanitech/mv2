@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "@fortawesome/fontawesome-free/css/all.css";
 
 body {
   margin: 0;
@@ -41,3 +42,7 @@ code {
 .image-card__description {
   color: #555;
 } */
+
+.hidden-scroll::-webkit-scrollbar {
+  display: none;
+}
