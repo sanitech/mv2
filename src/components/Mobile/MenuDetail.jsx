@@ -31,7 +31,7 @@ const DetailsMenu = () => {
         {/* Rating */}
         <div className="flex items-center mt-1 text-gray-600">
           <span className="text-yellow-400 text-lg">★</span>
-          <span className="ml-1">4.5 Rating</span>
+          <span className="ml-1">4.5 Ratin</span>
         </div>
 
         {/* Price */}
