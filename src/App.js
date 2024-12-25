@@ -10,6 +10,8 @@ import MobileMenu from "./components/MobileMenu";
 import HomePage from "./components/Mobile/HomePage";
 
 import NavWeb from "./components/Web/NavWeb";
+import StaffForm from "./components/Web/StaffForm";
+import AttendanceForm from "./components/Web/AttendanceForm";
 
 const App = () => {
   return (
@@ -29,6 +31,8 @@ const App = () => {
         <Route path="/MobileMenu" element={<MobileMenu />} />
         <Route path="/HomePage" element={<HomePage />} />
         <Route path="/NavWeb" element={<NavWeb />} />
+        <Route path="/StaffForm" element={<StaffForm />} />
+        <Route path="AttendanceForm" element={<AttendanceForm />} />
 
         <Route path="*" element={<h1>Not found</h1>} />
       </Routes>
